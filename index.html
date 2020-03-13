@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FireBase Test1</title>
+	</head>
+	<body>
+		<h1>Cloud Cafe</h1>
+
+		<div class="content">
+			<form id="add-cafe-form">
+				<input type="text" name="name" placeholder="Cafe name" />
+				<input type="text" name="city" placeholder="Cafe city" />
+				<button>Add Cafe</button>
+			</form>
+			<ul id="cafe-list"></ul>
+		</div>
+
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: "AIzaSyB0EM0qH7U5DllS-qx6uTtcZKw8-bdWGMs",
+				authDomain: "testbase-18b1c.firebaseapp.com",
+				databaseURL: "https://testbase-18b1c.firebaseio.com",
+				projectId: "testbase-18b1c",
+				storageBucket: "testbase-18b1c.appspot.com",
+				messagingSenderId: "425873542914",
+				appId: "1:425873542914:web:44861dcf83d4e59fc2bc1b",
+				measurementId: "G-34M3WT8QCE"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			const db = firebase.firestore();
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>
